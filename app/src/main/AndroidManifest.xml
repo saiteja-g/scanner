@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.teja3.zbar" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BarcodeScanner"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".locate"
+            android:label="@string/app_name" />
+
+        <service android:name=".commservice" />
+        <service
+            android:name=".MyService"
+            android:process=":my_service" />
+        <service
+            android:name=".Exam"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name=".Saveddata"
+            android:label="@string/title_activity_saveddata" >
+        </activity>
+        <activity
+            android:name=".Display"
+            android:label="@string/title_activity_display" >
+        </activity>
+        <activity
+            android:name=".locationdata"
+            android:label="@string/title_activity_locationdata" >
+        </activity>
+        <activity
+            android:name=".Locationnn"
+            android:label="@string/title_activity_locationnn" >
+        </activity>
+
+        <service
+            android:name=".MyService1"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".Update"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name=".MainUpd"
+            android:label="@string/title_activity_main_upd" >
+        </activity>
+    </application>
+
+</manifest>
